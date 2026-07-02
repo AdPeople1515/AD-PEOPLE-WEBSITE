@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adpeople.sg/sitemap.xml
