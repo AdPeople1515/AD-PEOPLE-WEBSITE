@@ -2446,6 +2446,15 @@ function showAIChatAnswer(key) {
   body.innerHTML = html;
 }
 
+
+// ══ AUTO PAGE FROM URL PARAM ══
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var pg = params.get('page');
+  if (pg) {
+    setTimeout(function(){ if(window.showPage) showPage(pg); }, 100);
+  }
+})();
 </script>
 </body>
 </html>
